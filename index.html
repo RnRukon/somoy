@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 style="color: rgb(255, 0, 200);border: 5px solid rgb(32, 218, 63);width: 500px;height: auto; margin: auto;text-align:center; border-radius:50px;" id="demo"></h1>
+    
+    <script>
+
+
+    setInterval(function myFunction(){ 
+    var x;
+    var time = new Date().getSeconds();
+    if(time>=5){
+        x="শুভ সকাল";
+    }else if(time <=12){
+        x=" ঠিক দুপুর";
+    }else if(time>=14){
+        x="শুভ বিকাল";
+    }else if(time<=17){
+        x = "শুভ সন্ধা";
+    }else{
+        x="শুভ রাত্রি"
+    }
+document.getElementById("demo").innerHTML=x +" ( রুকন )";
+
+    },1000)
+</script>
+
+ 
+</body>
+</html>
